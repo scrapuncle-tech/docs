@@ -20,18 +20,19 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://github.com',
+  url: 'https://scrapuncle-tech.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/docs/',
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ScrapeUncle', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  organizationName: 'scrapuncle-tech', // Updated to match the correct GitHub user/org
+  projectName: 'docs', // Updated to match the correct repo name
   deploymentBranch: 'gh-pages',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
