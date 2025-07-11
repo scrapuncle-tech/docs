@@ -42,11 +42,11 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          path: 'docs',
+          routeBasePath: '/', // Serve docs at /docs/intro, not /docs/docs/intro
+          sidebarPath: require.resolve('./sidebars.ts'),
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/scrapuncle-tech/docs/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -54,17 +54,14 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+            'https://github.com/scrapuncle-tech/docs/edit/main/blog/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       } satisfies Preset.Options,
     ],
@@ -102,7 +99,7 @@ const config: Config = {
           items: [
             {
               label: 'Docs Home',
-              to: '/docs/intro',
+              to: '/intro', // Update to match new routeBasePath
             },
           ],
         },
