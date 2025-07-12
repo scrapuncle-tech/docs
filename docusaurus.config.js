@@ -10,11 +10,11 @@ const config = {
   tagline: 'Responsible Recycling Made Rewarding',
   favicon: 'img/favicon.ico',
 
-  url: 'https://scrapuncle.com',
+  url: 'https://scrapuncle-tech.github.io',
   baseUrl: '/docs/',
   trailingSlash: false,
 
-  organizationName: 'scrapuncle',
+  organizationName: 'scrapuncle-tech',
   projectName: 'docs',
   deploymentBranch: 'gh-pages',
 
@@ -32,7 +32,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/scrapuncle/docs/edit/main/',
+          editUrl: 'https://github.com/scrapuncle-tech/docs/edit/main/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -54,7 +54,7 @@ const config = {
       items: [
         { type: 'docSidebar', sidebarId: 'scrapeuncleSidebar', position: 'left', label: 'Docs' },
         { href: 'https://scrapuncle.com', label: 'Website', position: 'right' },
-        { href: 'https://github.com/scrapuncle', label: 'GitHub', position: 'right' },
+        { href: 'https://github.com/scrapuncle-tech', label: 'GitHub', position: 'right' },
       ],
     },
     
@@ -72,7 +72,7 @@ const config = {
           title: 'Community',
           items: [
             { label: 'Website', href: 'https://scrapuncle.com' },
-            { label: 'GitHub', href: 'https://github.com/scrapuncle' },
+            { label: 'GitHub', href: 'https://github.com/scrapuncle-tech' },
           ],
         },
       ],
