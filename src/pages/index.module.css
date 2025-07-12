@@ -3,21 +3,95 @@
  * and scoped locally.
  */
 
+/* Enhanced hero banner with green gradient background and better spacing */
 .heroBanner {
-  padding: 4rem 0;
+  padding: 5rem 0 3rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, #e0ffe6 0%, #4ade80 100%); /* light green to company green */
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #14532d; /* dark green */
+  margin-bottom: 0.5rem;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  color: #166534; /* medium green */
+  margin-bottom: 2rem;
+}
+
+.logo {
+  height: 180px;
+  margin-bottom: 2rem;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.quickLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.quickLinkCard {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(20, 83, 45, 0.08);
+  padding: 2rem 2.5rem;
+  min-width: 260px;
+  max-width: 340px;
+  text-align: left;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  border: 1.5px solid #bbf7d0; /* light green border */
+}
+.quickLinkCard:hover {
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.16);
+  border-color: #22c55e; /* company green */
+}
+.quickLinkTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #14532d;
+  margin-bottom: 0.5rem;
+}
+.quickLinkDesc {
+  color: #166534;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.quickLinkBtn {
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+}
+.quickLinkBtn:hover {
+  background: #16a34a;
+  color: #fff;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem 0 1rem 0;
+  }
+  .quickLinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }

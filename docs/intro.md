@@ -1,49 +1,50 @@
 ---
-id: intro
-title: Introduction
-sidebar_position: 1
+title: How It Works
 ---
 
-# Tutorial Intro
+# Welcome to ScrapeUncle!
 
-Let's discover **Docusaurus in less than 5 minutes**.
+ScrapeUncle is a digital platform that enables users to dispose of their recyclables (Kabaad) in a responsible & rewarding manner.
+
+## What is ScrapeUncle?
+
+ScrapeUncle is a comprehensive recycling platform that makes it easy and rewarding to recycle your waste. Whether you're a household looking to dispose of recyclables or a business wanting to implement sustainable waste management, ScrapeUncle provides the tools and incentives you need.
+
+## Key Features
+- **♻️ Smart Recycling**: Intelligent waste classification and sorting
+- **💰 Reward System**: Earn points and rewards for every recyclable item
+- **📱 Easy Tracking**: Monitor your recycling impact and rewards
+- **🌱 Environmental Impact**: Track your contribution to sustainability
+- **🏢 Business Solutions**: Scalable recycling programs for organizations
+
+## How It Works
+
+### 1. **Collect Your Recyclables**
+Gather your recyclable materials (paper, plastic, metal, electronics, etc.)
+
+### 2. **Use Our Platform**
+- Download the ScrapeUncle app
+- Scan or manually input your recyclables
+- Get instant classification and reward estimates
+
+### 3. **Schedule Pickup or Drop-off**
+- Arrange for convenient pickup at your location
+- Or visit one of our recycling centers
+- Our trained staff ensures proper sorting and processing
+
+### 4. **Earn Rewards**
+- Receive points for every item recycled
+- Redeem points for cash, vouchers, or charitable donations
+- Track your environmental impact over time
+
+## Environmental Impact
+
+By using ScrapeUncle, you're contributing to:
+- **Reduced Landfill Waste**: Proper recycling keeps materials out of landfills
+- **Resource Conservation**: Recycled materials reduce the need for new resources
+- **Energy Savings**: Recycling uses less energy than producing new materials
+- **Carbon Footprint Reduction**: Less waste means lower greenhouse gas emissions
 
 ## Getting Started
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Ready to start recycling responsibly? Check out our [Getting Started Guide](/docs/getting-started/installation) to learn how to set up your ScrapeUncle account and begin your recycling journey.
