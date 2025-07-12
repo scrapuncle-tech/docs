@@ -6,21 +6,21 @@ This is the documentation site for ScrapeUncle, a digital platform that enables 
 
 ### Prerequisites
 - Node.js 18 or higher
-- Yarn package manager
+- npm package manager
 
 ### Local Development
 ```bash
 # Install dependencies
-yarn install
+npm install
 
 # Start development server
-yarn start
+npm start
 
 # Build for production
-yarn build
+npm run build
 
 # Serve production build locally
-yarn serve
+npm run serve
 ```
 
 ## 📚 Documentation Structure
@@ -51,10 +51,10 @@ This site is configured for automatic deployment to GitHub Pages using GitHub Ac
 3. **Manual Deployment**
    ```bash
    # Build the site
-   yarn build
+   npm run build
    
    # Deploy to GitHub Pages
-   yarn deploy
+   npm run deploy
    ```
 
 #### Deployment URL
@@ -69,12 +69,12 @@ If you prefer manual deployment:
 
 1. **Build the site:**
    ```bash
-   yarn build
+   npm run build
    ```
 
 2. **Deploy to GitHub Pages:**
    ```bash
-   yarn deploy
+   npm run deploy
    ```
 
 3. **Configure GitHub Pages:**
@@ -145,8 +145,8 @@ Edit `sidebars.js` to organize your documentation structure.
    - Ensure GitHub Pages is enabled
 
 3. **Styling Issues**
-   - Clear cache: `yarn clear`
-   - Rebuild: `yarn build`
+   - Clear cache: `npm run clear`
+   - Rebuild: `npm run build`
    - Check CSS syntax
 
 ### Getting Help
@@ -163,7 +163,7 @@ This documentation is part of the ScrapeUncle platform. See the main repository 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Test locally with `yarn start`
+4. Test locally with `npm start`
 5. Submit a pull request
 
 ---
