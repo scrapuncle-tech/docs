@@ -36,12 +36,14 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           enablement: true
           static_site_generator: docusaurus
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           path: build
 
   deploy:
@@ -53,4 +55,6 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} 
