@@ -1,0 +1,38 @@
+services:
+  bookstack-db:
+    image: mariadb:10.6
+    container_name: bookstack_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - bookstack_db_data:/var/lib/mysql
+
+  bookstack:
+    image: lscr.io/linuxserver/bookstack:latest
+    container_name: bookstack
+    environment:
+      PUID: 1000
+      PGID: 1000
+      TZ: Etc/UTC
+      APP_URL: ${APP_URL}
+      DB_HOST: bookstack-db
+      DB_PORT: ${DB_PORT}
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_DATABASE: ${DB_DATABASE}
+      APP_KEY: ${APP_KEY}
+    volumes:
+      - bookstack_app_data:/config
+    ports:
+      - 6875:80
+    depends_on:
+      - bookstack-db
+    restart: unless-stopped
+
+volumes:
+  bookstack_db_data:
+  bookstack_app_data:
